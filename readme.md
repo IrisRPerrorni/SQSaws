@@ -1,4 +1,4 @@
-Ah, quando conseguir se conectar na sua localstack, faça isso aqui:
+# Estudo com AWS Cli 
 
 1. Crie uma fila usando o AWS CLI de nome 'eventos-criacao-contatos-telefonicos'.(Veja o comando na minha cola ai em cima heehehhe)
 
@@ -14,8 +14,9 @@ Ah, quando conseguir se conectar na sua localstack, faça isso aqui:
 
 Use a lib: AWS SDK for Java 2.x
 
-#Criar SQS
-aws --endpoint http://localhost:4566 --profile localstack sqs create-queue --queue-name sqs-teste --attributes file://create-queue.json
+https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/sqs
 
+#Criar SQS
+aws --endpoint-url http://localhost:4566 --profile localstack sqs create-queue --queue-name eventos-criacao-contatos-telefonicos 
 #Buscar as mensagens de um SQS
 aws --endpoint http://localhost:4566 --profile localstack sqs receive-message --queue-url http://localhost:4566/000000000000/sqs-teste --attribute-names All --message-attribute-names All --max-number-of-messages 10
