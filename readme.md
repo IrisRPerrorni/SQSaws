@@ -13,6 +13,11 @@
 4. Ai quero que você use o comando "#Buscar as mensagens de um SQS"
 
 Use a lib: AWS SDK for Java 2.x
+______________________________________________
+# Conceito SQS 
+SQS é o serviço real fornecido pela AWS para filas de mensagens.
+Você interage com o SQS usando a API da AWS, que pode ser chamada diretamente no seu código ou por meio de bibliotecas/clientes disponíveis em várias linguagens de programação.
+SQS lida diretamente com a criação de filas, o envio e a recepção de mensagens.
 _______________________________________________
 - Com a localstack configurada usar o seguinte comando para criar a fila: 
 ```bash
